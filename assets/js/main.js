@@ -481,7 +481,7 @@ function darkmode() {
 
 }
 
-let formularioContacto = document.getElementById('elformulario');
+let formularioContacto = document.getElementById('contact-form');
 
 function enviarInfo(event) {
     event.preventDefault();
@@ -493,12 +493,37 @@ function enviarInfo(event) {
     let messageContacto = document.getElementById('contact-message');
     let campoVacio = document.getElementById('err-mensaje');
     let camposOk = document.getElementById('sucess-mensaje');
+    let campoVacioEn = document.getElementById('err-mensaje-en');
+    let camposOkEn = document.getElementById('sucess-mensaje-en');
 
-    url = `https://api.whatsapp.com/send?phone=+573016234779&text=Hola Juan, Soy ${nombreContacto.value}, mi número de contacto es ${celularContacto.value}, mi email es ${emailContacto.value}, Te escribo porque ${messageContacto.value}`;
+    urlEs = `https://api.whatsapp.com/send?phone=+573016234779&text=Hola Juan!, Soy ${nombreContacto.value}, mi número de contacto es ${celularContacto.value}, mi email es ${emailContacto.value}, Te escribo porque ${messageContacto.value}`;
+    urlEn = `https://api.whatsapp.com/send?phone=+573016234779&text=Hi Juan!, My name is ${nombreContacto.value}, my contact number is ${celularContacto.value}, my email is ${emailContacto.value}, I write to you because ${messageContacto.value}`;
 
+    const currentUrl = window.location.href;
 
-    // validaciones de los campos
-    if ((nombreContacto.value === '') || (celularContacto.value === '') || (emailContacto.value === '') ||
+    if (currentUrl.includes('/en/')) {
+        if ((nombreContacto.value === '') || (celularContacto.value === '') || (emailContacto.value === '') ||
+            (subjectContacto.value === '') || (messageContacto.value === '')) {
+            campoVacioEn.style.display = 'block';
+            campoVacioEn.innerHTML = '<p>You must fill out all fields</p>';
+            setTimeout(function () {
+                $(campoVacioEn).fadeOut('slow');
+            }, 2000);
+        } else {
+            camposOkEn.style.display = 'block';
+            camposOkEn.innerHTML = '<p>Contacting Juan...</p>';
+
+            setTimeout(function () {
+                $(camposOkEn).fadeOut('slow');
+                window.open(urlEn, '_blank');
+                nombreContacto.value = '';
+                celularContacto.value = '';
+                emailContacto.value = '';
+                subjectContacto.value = '';
+                messageContacto.value = '';
+            }, 1500);
+        }
+    } else if ((nombreContacto.value === '') || (celularContacto.value === '') || (emailContacto.value === '') ||
         (subjectContacto.value === '') || (messageContacto.value === '')) {
         campoVacio.style.display = 'block';
         campoVacio.innerHTML = '<p>Debes diligenciar todos los campos</p>';
@@ -511,15 +536,13 @@ function enviarInfo(event) {
 
         setTimeout(function () {
             $(camposOk).fadeOut('slow');
-            window.open(url, '_blank');
+            window.open(urlEs, '_blank');
             nombreContacto.value = '';
             celularContacto.value = '';
             emailContacto.value = '';
             subjectContacto.value = '';
             messageContacto.value = '';
         }, 1500);
-
-
     }
 }
 formularioContacto.addEventListener('submit', enviarInfo);
