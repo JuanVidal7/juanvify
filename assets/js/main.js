@@ -8,9 +8,9 @@
         },
         d: function (e) {
             this._window = $(window),
-            this._document = $(document),
-            this._body = $('body'),
-            this._html = $('html')
+                this._document = $(document),
+                this._body = $('body'),
+                this._html = $('html')
 
         },
 
@@ -28,10 +28,10 @@
             imJs.wowActive();
             imJs.awsActivation();
             imJs.activePopupDemo();
-            
+
         },
 
-        
+
         activePopupDemo: function (e) {
             $('.popuptab-area li a.demo-dark').on('click', function (e) {
                 $('.demo-modal-area').addClass('dark-version');
@@ -44,44 +44,44 @@
             })
         },
 
-       
+
 
         // contactForm: function () {
         //     $('.rwt-dynamic-form').on('submit', function (e) {
-		// 		e.preventDefault();
-		// 		var _self = $(this);
-		// 		var __selector = _self.closest('input,textarea');
-		// 		_self.closest('div').find('input,textarea').removeAttr('style');
-		// 		_self.find('.error-msg').remove();
-		// 		_self.closest('div').find('button[type="submit"]').attr('disabled', 'disabled');
-		// 		var data = $(this).serialize();
-		// 		$.ajax({
-		// 			url: 'mail.php',
-		// 			type: "post",
-		// 			dataType: 'json',
-		// 			data: data,
-		// 			success: function (data) {
-		// 				_self.closest('div').find('button[type="submit"]').removeAttr('disabled');
-		// 				if (data.code == false) {
-		// 					_self.closest('div').find('[name="' + data.field + '"]');
-		// 					_self.find('.rn-btn').after('<div class="error-msg"><p>*' + data.err + '</p></div>');
-		// 				} else {
-		// 					$('.error-msg').hide();
-		// 					$('.form-group').removeClass('focused');
-		// 					_self.find('.rn-btn').after('<div class="success-msg"><p>' + data.success + '</p></div>');
-		// 					_self.closest('div').find('input,textarea').val('');
+        // 		e.preventDefault();
+        // 		var _self = $(this);
+        // 		var __selector = _self.closest('input,textarea');
+        // 		_self.closest('div').find('input,textarea').removeAttr('style');
+        // 		_self.find('.error-msg').remove();
+        // 		_self.closest('div').find('button[type="submit"]').attr('disabled', 'disabled');
+        // 		var data = $(this).serialize();
+        // 		$.ajax({
+        // 			url: 'mail.php',
+        // 			type: "post",
+        // 			dataType: 'json',
+        // 			data: data,
+        // 			success: function (data) {
+        // 				_self.closest('div').find('button[type="submit"]').removeAttr('disabled');
+        // 				if (data.code == false) {
+        // 					_self.closest('div').find('[name="' + data.field + '"]');
+        // 					_self.find('.rn-btn').after('<div class="error-msg"><p>*' + data.err + '</p></div>');
+        // 				} else {
+        // 					$('.error-msg').hide();
+        // 					$('.form-group').removeClass('focused');
+        // 					_self.find('.rn-btn').after('<div class="success-msg"><p>' + data.success + '</p></div>');
+        // 					_self.closest('div').find('input,textarea').val('');
 
-		// 					setTimeout(function () {
-		// 						$('.success-msg').fadeOut('slow');
-		// 					}, 5000);
-		// 				}
-		// 			}
-		// 		});
-		// 	});
+        // 					setTimeout(function () {
+        // 						$('.success-msg').fadeOut('slow');
+        // 					}, 5000);
+        // 				}
+        // 			}
+        // 		});
+        // 	});
         // },
 
-        
-        
+
+
         wowActive: function () {
             new WOW().init();
         },
@@ -143,12 +143,12 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-chevron-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-chevron-right"></i></button>',
                 responsive: [
-                {
-                    breakpoint: 1200,
-                    settings: {
-                        arrows: false,
-                    }
-                }]
+                    {
+                        breakpoint: 1200,
+                        settings: {
+                            arrows: false,
+                        }
+                    }]
             });
 
 
@@ -163,28 +163,28 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
                 responsive: [{
-                        breakpoint: 1124,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 868,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            dots: true,
-                            arrows: false,
-                        }
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
+                },
+                {
+                    breakpoint: 868,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false,
+                    }
+                }
                 ]
             });
 
@@ -200,28 +200,28 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-arrow-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-arrow-right"></i></button>',
                 responsive: [{
-                        breakpoint: 1124,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 868,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 576,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            dots: true,
-                            arrows: false,
-                        }
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
+                },
+                {
+                    breakpoint: 868,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        dots: true,
+                        arrows: false,
+                    }
+                }
                 ]
             });
 
@@ -236,28 +236,28 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-chevron-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-chevron-right"></i></button>',
                 responsive: [{
-                        breakpoint: 1124,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 768,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                            arrows: false,
-                        }
-                    },
-                    {
-                        breakpoint: 577,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1,
-                            arrows: false,
-                        }
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
+                },
+                {
+                    breakpoint: 768,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                },
+                {
+                    breakpoint: 577,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        arrows: false,
+                    }
+                }
                 ]
             });
 
@@ -272,26 +272,26 @@
                 prevArrow: '<button class="slide-arrow prev-arrow"><i class="feather-chevron-left"></i></button>',
                 nextArrow: '<button class="slide-arrow next-arrow"><i class="feather-chevron-right"></i></button>',
                 responsive: [{
-                        breakpoint: 1124,
-                        settings: {
-                            slidesToShow: 2,
-                            slidesToScroll: 1,
-                        }
-                    },
-                    {
-                        breakpoint: 868,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            slidesToShow: 1,
-                            slidesToScroll: 1
-                        }
+                    breakpoint: 1124,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
                     }
+                },
+                {
+                    breakpoint: 868,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                },
+                {
+                    breakpoint: 480,
+                    settings: {
+                        slidesToShow: 1,
+                        slidesToScroll: 1
+                    }
+                }
                 ]
             });
 
@@ -316,7 +316,7 @@
                     $(scrollTop).css('opacity', '0');
                 }
             });
-            
+
             //Click event to scroll to top
             $(scrollTop).on('click', function () {
                 $('html, body').animate({
@@ -407,7 +407,7 @@
 
         },
 
-        awsActivation:function(e){
+        awsActivation: function (e) {
             AOS.init();
         },
 
@@ -417,17 +417,17 @@
 
 })(jQuery, window)
 
-function iconsDM(){
+function iconsDM() {
     const icons = document.getElementById('toggle');
     const insertIcon = document.getElementById('iconsDarkMode');
 
-    if(icons.className.includes('white-version')){
+    if (icons.className.includes('white-version')) {
         insertIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon" id="iconDarkMode"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
     }
 
 }
 
-function darkmode(){
+function darkmode() {
     const toggle = document.getElementById('toggle');
     const istIcon = document.getElementById('iconsDarkMode');
     const logoJCV = document.getElementById('imgLogoJuan');
@@ -437,42 +437,42 @@ function darkmode(){
 
     toggle.classList.toggle('white-version');
 
-    if(toggle.className.includes('white-version')){
+    if (toggle.className.includes('white-version')) {
         istIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-moon" id="iconDarkMode"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>';
     } else {
         istIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun" id="iconDarkMode"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
     }
 
-    if(logoJCV.getAttribute('src') === 'assets/images/logo/logojuannegro.png'){
+    if (logoJCV.getAttribute('src') === 'assets/images/logo/logojuannegro.png') {
         logoJCV.setAttribute('src', 'assets/images/logo/logojuanblanco.png')
-    } else if(logoJCV.getAttribute('src') === '../assets/images/logo/logojuannegro.png'){
+    } else if (logoJCV.getAttribute('src') === '../assets/images/logo/logojuannegro.png') {
         logoJCV.setAttribute('src', '../assets/images/logo/logojuanblanco.png')
-    } else if(logoJCV.getAttribute('src') === '../assets/images/logo/logojuanblanco.png'){
+    } else if (logoJCV.getAttribute('src') === '../assets/images/logo/logojuanblanco.png') {
         logoJCV.setAttribute('src', '../assets/images/logo/logojuannegro.png')
     } else {
         logoJCV.setAttribute('src', 'assets/images/logo/logojuannegro.png')
     }
 
-    if(logoJCVMovil.getAttribute('src') === 'assets/images/logo/logojuannegro.png'){
+    if (logoJCVMovil.getAttribute('src') === 'assets/images/logo/logojuannegro.png') {
         logoJCVMovil.setAttribute('src', 'assets/images/logo/logojuanblanco.png')
-    } else if(logoJCVMovil.getAttribute('src') === '../assets/images/logo/logojuannegro.png'){
+    } else if (logoJCVMovil.getAttribute('src') === '../assets/images/logo/logojuannegro.png') {
         logoJCVMovil.setAttribute('src', '../assets/images/logo/logojuanblanco.png')
-    } else if(logoJCVMovil.getAttribute('src') === '../assets/images/logo/logojuanblanco.png'){
+    } else if (logoJCVMovil.getAttribute('src') === '../assets/images/logo/logojuanblanco.png') {
         logoJCVMovil.setAttribute('src', '../assets/images/logo/logojuannegro.png')
     } else {
         logoJCVMovil.setAttribute('src', 'assets/images/logo/logojuannegro.png')
     }
 
-    if(logoJCVFoot.getAttribute('src') === 'assets/images/logo/logojuanfooternegro.png'){
+    if (logoJCVFoot.getAttribute('src') === 'assets/images/logo/logojuanfooternegro.png') {
         logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuanfooterblanco.png')
-    } else if(logoJCVFoot.getAttribute('src') === '../assets/images/logo/logojuanfooternegro.png'){
+    } else if (logoJCVFoot.getAttribute('src') === '../assets/images/logo/logojuanfooternegro.png') {
         logoJCVFoot.setAttribute('src', '../assets/images/logo/logojuanfooterblanco.png')
-    } else if(logoJCVFoot.getAttribute('src') === '../assets/images/logo/logojuanfooterblanco.png'){
+    } else if (logoJCVFoot.getAttribute('src') === '../assets/images/logo/logojuanfooterblanco.png') {
         logoJCVFoot.setAttribute('src', '../assets/images/logo/logojuanfooternegro.png')
     } else {
         logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuanfooternegro.png')
     }
-    
+
     // if(logoJCVFoot.getAttribute('src') === 'assets/images/logo/logojuanfooternegro.png'){
     //     logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuanfooterblanco.png')
     // } else {
@@ -480,3 +480,52 @@ function darkmode(){
     // }
 
 }
+
+let formularioContacto = document.getElementById('elformulario');
+
+function enviarInfo(event) {
+    event.preventDefault();
+
+    let nombreContacto = document.getElementById('contact-name');
+    let celularContacto = document.getElementById('contact-phone');
+    let emailContacto = document.getElementById('contact-email');
+    let subjectContacto = document.getElementById('subject');
+    let messageContacto = document.getElementById('contact-message');
+    let campoVacio = document.getElementById('err-mensaje');
+    let camposOk = document.getElementById('sucess-mensaje');
+
+    url = `https://api.whatsapp.com/send?phone=+573016234779&text=Hola Juan, Soy ${nombreContacto.value}, mi número de contacto es ${celularContacto.value}, mi email es ${emailContacto.value}, Te escribo porque ${messageContacto.value}`;
+
+
+    // validaciones de los campos
+    if ((nombreContacto.value === '') || (celularContacto.value === '') || (emailContacto.value === '') ||
+        (subjectContacto.value === '') || (messageContacto.value === '')) {
+        campoVacio.style.display = 'block';
+        campoVacio.innerHTML = '<p>Debes diligenciar todos los campos</p>';
+        setTimeout(function () {
+            $(campoVacio).fadeOut('slow');
+        }, 2000);
+    } else {
+        camposOk.style.display = 'block';
+        camposOk.innerHTML = '<p>Contactando a Juan...</p>';
+
+        setTimeout(function () {
+            $(camposOk).fadeOut('slow');
+            window.open(url, '_blank');
+            nombreContacto.value = '';
+            celularContacto.value = '';
+            emailContacto.value = '';
+            subjectContacto.value = '';
+            messageContacto.value = '';
+        }, 1500);
+
+
+    }
+}
+formularioContacto.addEventListener('submit', enviarInfo);
+
+// Inicio Script únicamente para 000WebHostApp para quitar el Powered By 000WebHost
+// window.addEventListener("load", function (event) {
+//     document.getElementsByTagName('img').item(63).style.display = 'none';
+// });
+// Fin Script únicamente para 000WebHostApp para quitar el Powered By 000WebHost

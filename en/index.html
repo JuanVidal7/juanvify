@@ -153,7 +153,7 @@
                                         <p class="description">For about 18 years of experience in IT,
                                             and 7 years of experience in Web Development,
                                             I have helped catapult different brands into the digital world,
-                                            supporting their business growth and e-commerce.
+                                            supporting their business growth and eCommerce.
                                         </p>
                                     </div>
                                 </div>
@@ -261,8 +261,8 @@
                                     <i data-feather="shopping-cart"></i>
                                 </div>
                                 <div class="content">
-                                    <h4 class="title">E-Commerce</h4>
-                                    <p class="description">Implementation of complete E-Commerce with product
+                                    <h4 class="title">eCommerce</h4>
+                                    <p class="description">Implementation of complete eCommerce with product
                                         configuration,
                                         including Payment Gateways such as MercadoPago.
                                     </p>
@@ -489,7 +489,7 @@
                                             <a href="javascript:void(0)">Design & Development</a>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a href="javascript:void(0)">E-Commerce Project with React JS,
+                                    <h4 class="title"><a href="javascript:void(0)">eCommerce Project with React JS,
                                             TuBaúlSecreto.<i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
@@ -1532,7 +1532,7 @@
                                                     </div>
                                                     <div class="check d-flex">
                                                         <i data-feather="check"></i>
-                                                        <p>E-Commerce (30 Prds)</p>
+                                                        <p>eCommerce (30 Prds)</p>
                                                     </div>
                                                     <div class="check d-flex">
                                                         <i data-feather="check"></i>
@@ -1643,7 +1643,7 @@
                                                     </div>
                                                     <div class="check d-flex">
                                                         <i data-feather="check"></i>
-                                                        <p>E-Commerce (50 Prds)</p>
+                                                        <p>eCommerce (50 Prds)</p>
                                                     </div>
                                                     <div class="check d-flex">
                                                         <i data-feather="check"></i>
@@ -1713,10 +1713,9 @@
                                 <span>Frontend Developer</span>
                             </div>
                             <div class="description">
-                                <p>Write me or contact me.</p>
-                                <span class="phone">Phone: <a href="tel:+573016234779">+573016234779</a></span>
-                                <span class="mail">Email: <a
-                                        href="mailto:juancarlosvidalp@hotmail.com">juancarlosvidalp@hotmail.com</a></span>
+                                Con más de 18 años de experiencia en TI, y más de 7 años de experiencia en Desarrollo
+                                Web, he ayudado a catapultar diferentes marcas hacía el mundo digital, apoyando su
+                                crecimiento empresarial y su comercio electrónico.
                             </div>
                             <div class="social-area">
                                 <div class="name">FIND WITH ME</div>
@@ -1731,12 +1730,11 @@
                         <div class="contact-form-wrapper">
                             <div class="introduce">
 
-                                <form class="rnt-contact-form rwt-dynamic-form row" method="POST"
-                                    action="https://formsubmit.co/be5d1bc2b20eafbb61c2cc45f19c4144">
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="elformulario">
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label for="contact-name">Your Name</label>
+                                            <label for="contact-name">Your Name*</label>
                                             <input class="form-control form-control-lg" name="contact-name"
                                                 id="contact-name" type="text">
                                         </div>
@@ -1744,7 +1742,7 @@
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label for="contact-phone">Phone Number</label>
+                                            <label for="contact-phone">Phone Number*</label>
                                             <input class="form-control" name="contact-phone" id="contact-phone"
                                                 type="text">
                                         </div>
@@ -1752,7 +1750,7 @@
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <label for="contact-email">Email</label>
+                                            <label for="contact-email">Email*</label>
                                             <input class="form-control form-control-sm" id="contact-email"
                                                 name="contact-email" type="email">
                                         </div>
@@ -1760,7 +1758,7 @@
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <label for="subject">subject</label>
+                                            <label for="subject">subject*</label>
                                             <input class="form-control form-control-sm" id="subject" name="subject"
                                                 type="text">
                                         </div>
@@ -1768,7 +1766,7 @@
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <label for="contact-message">Your Message</label>
+                                            <label for="contact-message">Your Message*</label>
                                             <textarea name="contact-message" id="contact-message" cols="30"
                                                 rows="10"></textarea>
                                         </div>
@@ -1779,6 +1777,8 @@
                                             <span>SEND MESSAGE</span>
                                             <i data-feather="arrow-right"></i>
                                         </button>
+                                        <div class="error-msg" id="err-mensaje" style="display: none;"></div>
+                                        <div class="success-msg" id="sucess-mensaje" style="display: none;"></div>
                                     </div>
                                 </form>
                             </div>
@@ -2059,12 +2059,12 @@
                                         <span>Design & Development</span> eCommerce with React JS.
                                     </h3>
                                     <p class="mb--30">For my final React JS project,
-                                        I designed and developed a complete E-Commerce,
+                                        I designed and developed a complete eCommerce,
                                         adding different products and quantities to the shopping cart.</p>
                                     <p>The Shopping Cart allows to delete a product, empty the cart,
                                         fill personal data, generate a purchase order and finalize it,
                                         in order to generate a PDF document with all the details of the purchase.</p>
-                                        <br>
+                                    <br>
                                     <p>All functionality is in <strong> LLena Tu Baúl</strong></p>
                                     <div class="button-group mt--20">
                                         <a href="https://proyectotbs.onrender.com/" class="rn-btn" target="_blank">

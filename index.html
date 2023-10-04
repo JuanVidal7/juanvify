@@ -259,8 +259,8 @@
                                     <i data-feather="shopping-cart"></i>
                                 </div>
                                 <div class="content">
-                                    <h4 class="title">E-Commerce</h4>
-                                    <p class="description">Implementación de E-Commerce completos con configuración
+                                    <h4 class="title">eCommerce</h4>
+                                    <p class="description">Implementación de eCommerce completos con configuración
                                         de productos, incluyendo Pasarelas de Pago como MercadoPago.
                                     </p>
                                     <a class="read-more-button" href="#"><i class="feather-code"></i></a>
@@ -485,7 +485,7 @@
                                             <a href="javascript:void(0)">Diseño y Desarrollo</a>
                                         </div>
                                     </div>
-                                    <h4 class="title"><a href="javascript:void(0)">Proyecto E-Commerce con React JS,
+                                    <h4 class="title"><a href="javascript:void(0)">Proyecto eCommerce con React JS,
                                             TuBaúlSecreto.<i class="feather-arrow-up-right"></i></a></h4>
                                 </div>
                             </div>
@@ -1531,7 +1531,7 @@
                                                     </div>
                                                     <div class="check d-flex">
                                                         <i data-feather="check"></i>
-                                                        <p>E-Commerce (30 Prds)</p>
+                                                        <p>eCommerce (30 Prds)</p>
                                                     </div>
                                                     <div class="check d-flex">
                                                         <i data-feather="check"></i>
@@ -1643,7 +1643,7 @@
                                                     </div>
                                                     <div class="check d-flex">
                                                         <i data-feather="check"></i>
-                                                        <p>E-Commerce (50 Prds)</p>
+                                                        <p>eCommerce (50 Prds)</p>
                                                     </div>
                                                     <div class="check d-flex">
                                                         <i data-feather="check"></i>
@@ -1713,10 +1713,9 @@
                                 <span>Desarrollador Frontend</span>
                             </div>
                             <div class="description">
-                                <p>Escríbeme o comunícate conmigo.</p>
-                                <span class="phone">Celular: <a href="tel:+573016234779">+573016234779</a></span>
-                                <span class="mail">Email: <a
-                                        href="mailto:juancarlosvidalp@hotmail.com">juancarlosvidalp@hotmail.com</a></span>
+                                Con más de 18 años de experiencia en TI, y más de 7 años de experiencia en Desarrollo
+                                Web, he ayudado a catapultar diferentes marcas hacía el mundo digital, apoyando su
+                                crecimiento empresarial y su comercio electrónico.
                             </div>
                             <div class="social-area">
                                 <div class="name">ENCUÉNTRAME EN</div>
@@ -1731,12 +1730,11 @@
                         <div class="contact-form-wrapper">
                             <div class="introduce">
 
-                                <form class="rnt-contact-form rwt-dynamic-form row" method="POST"
-                                    action="https://formsubmit.co/be5d1bc2b20eafbb61c2cc45f19c4144">
+                                <form class="rnt-contact-form rwt-dynamic-form row" id="elformulario">
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label for="contact-name">Nombre Completo</label>
+                                            <label for="contact-name">Nombre Completo*</label>
                                             <input class="form-control form-control-lg" name="contact-name"
                                                 id="contact-name" type="text">
                                         </div>
@@ -1744,7 +1742,7 @@
 
                                     <div class="col-lg-6">
                                         <div class="form-group">
-                                            <label for="contact-phone">Celular</label>
+                                            <label for="contact-phone">Celular*</label>
                                             <input class="form-control" name="contact-phone" id="contact-phone"
                                                 type="text">
                                         </div>
@@ -1752,7 +1750,7 @@
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <label for="contact-email">Email</label>
+                                            <label for="contact-email">Email*</label>
                                             <input class="form-control form-control-sm" id="contact-email"
                                                 name="contact-email" type="email">
                                         </div>
@@ -1760,7 +1758,7 @@
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <label for="subject">Asunto</label>
+                                            <label for="subject">Asunto*</label>
                                             <input class="form-control form-control-sm" id="subject" name="subject"
                                                 type="text">
                                         </div>
@@ -1768,7 +1766,7 @@
 
                                     <div class="col-lg-12">
                                         <div class="form-group">
-                                            <label for="contact-message">Mensaje</label>
+                                            <label for="contact-message">Mensaje*</label>
                                             <textarea name="contact-message" id="contact-message" cols="30"
                                                 rows="10"></textarea>
                                         </div>
@@ -1779,6 +1777,8 @@
                                             <span>ENVIAR MENSAJE</span>
                                             <i data-feather="arrow-right"></i>
                                         </button>
+                                        <div class="error-msg" id="err-mensaje" style="display: none;"></div>
+                                        <div class="success-msg" id="sucess-mensaje" style="display: none;"></div>
                                     </div>
                                 </form>
                             </div>
@@ -2060,12 +2060,12 @@
                                         <span>Diseño y Desarrollo</span> eCommerce con React JS.
                                     </h3>
                                     <p class="mb--30">Para mi proyecto final de React JS, diseñé y desarrollé un
-                                        E-Commerce completo, agregando diferentes productos y cantidades al carrito de
+                                        eCommerce completo, agregando diferentes productos y cantidades al carrito de
                                         compras.</p>
                                     <p>El Carrito de Compras permite eliminar un producto, vaciar el carrito, llenar
                                         datos personales, generar una orden de compra y finalizarla,
                                         con el fin de generar un documento en PDF con todo el detalle de la compra.</p>
-                                        <br>
+                                    <br>
                                     <p>Toda la funcionalidad está en <strong> LLena Tu Baúl</strong></p>
                                     <div class="button-group mt--20">
                                         <a href="https://proyectotbs.onrender.com/" class="rn-btn" target="_blank">
