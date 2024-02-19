@@ -11514,7 +11514,7 @@ div#featured-project-carousel {
               .navigation-wrapper ul.nav li.recommended::after {
                 display: none; } }
           .navigation-wrapper ul.nav li.recommended::before {
-            content: "Recomendado";
+            content: "Most Popular";
             position: absolute;
             top: -50px;
             right: 33px;
