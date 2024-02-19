@@ -496,8 +496,8 @@ function enviarInfo(event) {
     let campoVacioEn = document.getElementById('err-mensaje-en');
     let camposOkEn = document.getElementById('sucess-mensaje-en');
 
-    urlEs = `https://api.whatsapp.com/send?phone=+573016234779&text=Hola Juan!, Soy ${nombreContacto.value}, mi número de contacto es ${celularContacto.value}, mi email es ${emailContacto.value}, Te escribo porque ${messageContacto.value}`;
-    urlEn = `https://api.whatsapp.com/send?phone=+573016234779&text=Hi Juan!, My name is ${nombreContacto.value}, my contact number is ${celularContacto.value}, my email is ${emailContacto.value}, I write to you because ${messageContacto.value}`;
+    urlEs = `https://api.whatsapp.com/send?phone=+12368803756&text=Hola Juan!, Soy ${nombreContacto.value}, mi número de contacto es ${celularContacto.value}, mi email es ${emailContacto.value}, Te escribo porque ${messageContacto.value}`;
+    urlEn = `https://api.whatsapp.com/send?phone=+12368803756&text=Hi Juan!, My name is ${nombreContacto.value}, my contact number is ${celularContacto.value}, my email is ${emailContacto.value}, I write to you because ${messageContacto.value}`;
 
     const currentUrl = window.location.href;
 
