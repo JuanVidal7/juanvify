@@ -491,8 +491,8 @@ function enviarInfo(event) {
     let emailContacto = document.getElementById('contact-email');
     let subjectContacto = document.getElementById('subject');
     let messageContacto = document.getElementById('contact-message');
-    let campoVacio = document.getElementById('err-mensaje');
-    let camposOk = document.getElementById('sucess-mensaje');
+    let campoVacioEs = document.getElementById('err-mensaje-es');
+    let camposOkEs = document.getElementById('sucess-mensaje-es');
     let campoVacioEn = document.getElementById('err-mensaje-en');
     let camposOkEn = document.getElementById('sucess-mensaje-en');
 
@@ -501,7 +501,7 @@ function enviarInfo(event) {
 
     const currentUrl = window.location.href;
 
-    if (currentUrl.includes('/en/')) {
+    if (!currentUrl.includes('/es/')) {
         if ((nombreContacto.value === '') || (celularContacto.value === '') || (emailContacto.value === '') ||
             (subjectContacto.value === '') || (messageContacto.value === '')) {
             campoVacioEn.style.display = 'block';
@@ -525,17 +525,17 @@ function enviarInfo(event) {
         }
     } else if ((nombreContacto.value === '') || (celularContacto.value === '') || (emailContacto.value === '') ||
         (subjectContacto.value === '') || (messageContacto.value === '')) {
-        campoVacio.style.display = 'block';
-        campoVacio.innerHTML = '<p>Debes diligenciar todos los campos</p>';
+        campoVacioEs.style.display = 'block';
+        campoVacioEs.innerHTML = '<p>Debes diligenciar todos los campos</p>';
         setTimeout(function () {
-            $(campoVacio).fadeOut('slow');
+            $(campoVacioEs).fadeOut('slow');
         }, 2000);
     } else {
-        camposOk.style.display = 'block';
-        camposOk.innerHTML = '<p>Contactando a Juan...</p>';
+        camposOkEs.style.display = 'block';
+        camposOkEs.innerHTML = '<p>Contactando a Juan...</p>';
 
         setTimeout(function () {
-            $(camposOk).fadeOut('slow');
+            $(camposOkEs).fadeOut('slow');
             window.open(urlEs, '_blank');
             nombreContacto.value = '';
             celularContacto.value = '';
