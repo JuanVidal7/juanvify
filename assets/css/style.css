@@ -20699,6 +20699,10 @@ body.white-version {
   color: var(--color-primary);
 }
 
+.white-version .slide .content .inner .title .cd-words-wrapper .is-visible {
+  color: var(--color-heading-wv);
+}
+
 .white-version .slide .content .inner .subtitle {
   color: var(--color-body-white);
   font-weight: 500;
