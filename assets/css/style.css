@@ -6305,9 +6305,8 @@ button,
 html input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  -webkit-appearance: button;
-  -moz-appearance: button;
   appearance: button;
+  -moz-appearance: button;
   cursor: pointer;
 }
 
@@ -6322,16 +6321,13 @@ input[type="radio"] {
 }
 
 input[type="search"] {
-  -webkit-appearance: textfield;
+  appearance: textfield;
   -moz-appearance: textfield;
-  appearance: textfield;
-  appearance: textfield;
   padding-right: 2px;
   width: 270px;
 }
 
 input[type="search"]::-webkit-search-decoration {
-  -webkit-appearance: none;
   appearance: none;
 }
 
@@ -6476,7 +6472,7 @@ button,
 [type="button"],
 [type="reset"],
 [type="submit"] {
-  -webkit-appearance: button;
+  appearance: button;
 }
 
 input {
@@ -6491,7 +6487,6 @@ select {
   outline: none;
   color: var(--color-body);
   -moz-appearance: none;
-  -webkit-appearance: none;
   appearance: none;
   border: 1px solid var(--color-border);
   border-radius: 4px;
@@ -7601,25 +7596,25 @@ Custom Row
 input:-moz-placeholder,
 textarea:-moz-placeholder {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input::-moz-placeholder,
 textarea::-moz-placeholder {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
   opacity: 1;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 /*=============================
@@ -15270,7 +15265,7 @@ button.close {
   padding: 0;
   background-color: transparent;
   border: 0;
-  -webkit-appearance: none;
+  appearance: none;
 }
 
 .close {
