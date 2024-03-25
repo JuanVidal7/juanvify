@@ -443,40 +443,40 @@ function darkmode() {
         istIcon.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-sun" id="iconDarkMode"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>';
     }
 
-    if (logoJCV.getAttribute('src') === 'assets/images/logo/logojuannegro.png') {
-        logoJCV.setAttribute('src', 'assets/images/logo/logojuanblanco.png')
-    } else if (logoJCV.getAttribute('src') === '../assets/images/logo/logojuannegro.png') {
-        logoJCV.setAttribute('src', '../assets/images/logo/logojuanblanco.png')
-    } else if (logoJCV.getAttribute('src') === '../assets/images/logo/logojuanblanco.png') {
-        logoJCV.setAttribute('src', '../assets/images/logo/logojuannegro.png')
+    if (logoJCV.getAttribute('src') === 'assets/images/logo/logojuannegrog.png') {
+        logoJCV.setAttribute('src', 'assets/images/logo/logojuanblancog.png')
+    } else if (logoJCV.getAttribute('src') === '../assets/images/logo/logojuannegrog.png') {
+        logoJCV.setAttribute('src', '../assets/images/logo/logojuanblancog.png')
+    } else if (logoJCV.getAttribute('src') === '../assets/images/logo/logojuanblancog.png') {
+        logoJCV.setAttribute('src', '../assets/images/logo/logojuannegrog.png')
     } else {
-        logoJCV.setAttribute('src', 'assets/images/logo/logojuannegro.png')
+        logoJCV.setAttribute('src', 'assets/images/logo/logojuannegrog.png')
     }
 
-    if (logoJCVMovil.getAttribute('src') === 'assets/images/logo/logojuannegro.png') {
-        logoJCVMovil.setAttribute('src', 'assets/images/logo/logojuanblanco.png')
-    } else if (logoJCVMovil.getAttribute('src') === '../assets/images/logo/logojuannegro.png') {
-        logoJCVMovil.setAttribute('src', '../assets/images/logo/logojuanblanco.png')
-    } else if (logoJCVMovil.getAttribute('src') === '../assets/images/logo/logojuanblanco.png') {
-        logoJCVMovil.setAttribute('src', '../assets/images/logo/logojuannegro.png')
+    if (logoJCVMovil.getAttribute('src') === 'assets/images/logo/logojuannegrog.png') {
+        logoJCVMovil.setAttribute('src', 'assets/images/logo/logojuanblancog.png')
+    } else if (logoJCVMovil.getAttribute('src') === '../assets/images/logo/logojuannegrog.png') {
+        logoJCVMovil.setAttribute('src', '../assets/images/logo/logojuanblancog.png')
+    } else if (logoJCVMovil.getAttribute('src') === '../assets/images/logo/logojuanblancog.png') {
+        logoJCVMovil.setAttribute('src', '../assets/images/logo/logojuannegrog.png')
     } else {
-        logoJCVMovil.setAttribute('src', 'assets/images/logo/logojuannegro.png')
+        logoJCVMovil.setAttribute('src', 'assets/images/logo/logojuannegrog.png')
     }
 
-    if (logoJCVFoot.getAttribute('src') === 'assets/images/logo/logojuanfooternegro.png') {
-        logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuanfooterblanco.png')
-    } else if (logoJCVFoot.getAttribute('src') === '../assets/images/logo/logojuanfooternegro.png') {
-        logoJCVFoot.setAttribute('src', '../assets/images/logo/logojuanfooterblanco.png')
-    } else if (logoJCVFoot.getAttribute('src') === '../assets/images/logo/logojuanfooterblanco.png') {
-        logoJCVFoot.setAttribute('src', '../assets/images/logo/logojuanfooternegro.png')
+    if (logoJCVFoot.getAttribute('src') === 'assets/images/logo/logojuannegrog.png') {
+        logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuanblancog.png')
+    } else if (logoJCVFoot.getAttribute('src') === '../assets/images/logo/logojuannegrog.png') {
+        logoJCVFoot.setAttribute('src', '../assets/images/logo/logojuanblancog.png')
+    } else if (logoJCVFoot.getAttribute('src') === '../assets/images/logo/logojuanblancog.png') {
+        logoJCVFoot.setAttribute('src', '../assets/images/logo/logojuannegrog.png')
     } else {
-        logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuanfooternegro.png')
+        logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuannegrog.png')
     }
 
-    // if(logoJCVFoot.getAttribute('src') === 'assets/images/logo/logojuanfooternegro.png'){
-    //     logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuanfooterblanco.png')
+    // if(logoJCVFoot.getAttribute('src') === 'assets/images/logo/logojuannegrog.png'){
+    //     logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuanblancog.png')
     // } else {
-    //     logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuanfooternegro.png')
+    //     logoJCVFoot.setAttribute('src', 'assets/images/logo/logojuannegrog.png')
     // }
 
 }

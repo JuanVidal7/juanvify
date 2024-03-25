@@ -12358,6 +12358,10 @@ body.template-color-1 {
     width: 310px;
     padding: 10px;
   }
+
+  .popup-mobile-menu .inner .menu-top .menu-header .logo {
+    width: 70%;
+  }
 }
 
 .popup-mobile-menu .inner .menu-top {
