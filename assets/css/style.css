@@ -17118,6 +17118,7 @@ div#featured-project-carousel {
     background: var(--color-primary);
     border-radius: 9px;
   }
+
   .navigation-wrapper ul.nav li.recommended.recommended_es::before {
     top: 5px;
     right: 5px;
@@ -18995,6 +18996,22 @@ div#featured-project-carousel {
   height: 100%;
   transition: 0.5s all ease-in-out;
   display: inline-block;
+}
+
+.woi {
+  border-bottom: 35px solid #ff014f;
+}
+
+.woi p {
+  bottom: 0;
+  position: absolute;
+  color: #fff;
+  margin-bottom: -35px;
+  text-align: center;
+  width: 85%;
+  font-size: 16px;
+  min-height: 31px;
+  font-weight: bold;
 }
 
 @media only screen and (min-width: 768px) and (max-width: 991px) {
