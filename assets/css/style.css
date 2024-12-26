@@ -8269,13 +8269,30 @@ ul.slick-dots li button {
   margin: 0 !important;
 }
 
-/*!
-Animate.css - http://daneden.me/animate
-Version - 3.4.0
-Licensed under the MIT license - http://opensource.org/licenses/MIT
+.img-juan-personal img {
+  height: 707px;
+  object-fit: cover;
+  overflow: visible;
+  transform: scaleX(-1);
+}
 
-Copyright (c) 2015 Daniel Eden
-*/
+@media (max-width: 700px){
+  .img-juan-personal img {
+    overflow: hidden;
+    height: auto;
+  }
+}
+
+@media (max-width: 480px){
+  .img-juan-personal img {
+    height: auto;
+    object-fit: cover;
+    overflow: hidden;
+    transform: scaleX(-1);
+  }
+}
+
+
 .animated {
   -webkit-animation-duration: 1s;
   animation-duration: 1s;
@@ -12072,10 +12089,10 @@ body.template-color-1 {
 }
 
 .rn-header.header--fixed.sticky {
-  background-color: #060310de;
+  background-color: transparent;
   box-shadow: var(--shadow-1);
   position: fixed;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(20px);
   top: 0;
 }
 
@@ -15507,7 +15524,7 @@ div#featured-project-carousel {
     display: none;
   }
 
-  #imgLogoJuanMov{
+  #imgLogoJuanMov {
     width: 60%;
   }
 }
@@ -17748,7 +17765,6 @@ div#featured-project-carousel {
   padding: 30px;
   box-shadow: var(--shadow-1);
   border-radius: 10px;
-  background-color: #060310;
   height: 100%;
 }
 
@@ -17780,8 +17796,9 @@ div#featured-project-carousel {
 }
 
 .contact-about-area .thumbnail img {
-  width: 100%;
-  height: auto;
+  width: 200px;
+  height: 268px;
+  object-fit: cover;
   transition: var(--transition);
 }
 
@@ -17911,10 +17928,6 @@ div#featured-project-carousel {
   opacity: 1;
 }
 
-.contact-about-area:hover .thumbnail img {
-  transform: scale(1.1);
-}
-
 .contact-form-wrapper {
   box-shadow: var(--shadow-1);
   padding: 30px;
@@ -17958,7 +17971,7 @@ div#featured-project-carousel {
 .contact-form-wrapper input {
   background-color: #191b1e;
   border-radius: 6px;
-  height: 55px;
+  height: 70px;
   transition: var(--transition);
   border: 2px solid #191b1e;
   padding: 0 15px;
@@ -17983,7 +17996,7 @@ div#featured-project-carousel {
 }
 
 .contact-form-wrapper textarea {
-  min-height: 235px;
+  min-height: 200px;
   background-color: #191b1e;
   border-radius: 6px;
   padding: 0;
